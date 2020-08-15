@@ -30,6 +30,10 @@ function keluarkanyYangBeda(listAngka){
     var tempGanjil = [];
     var tempGenap = [];
 
+    if(listAngka.length < 3){
+        return 'false'; //kurang dari 3 seperti pada soal 
+    }
+
     listAngka.forEach(element =>{
         if(element%2 == 0){
             tempGenap.push(element);
@@ -73,7 +77,7 @@ console.log("no. 3 findNeedle")
 console.log(findNeedle(["red", "blue", "yellow", "black", "grey"], "blue"));
 
 
-//no.3 
+//no.4 
 function blueOcean(listAngka, listSubtrimAngka){
     var result = [];
 
